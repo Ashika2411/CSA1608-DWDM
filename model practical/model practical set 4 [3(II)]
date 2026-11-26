@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     computer
+Instances:    5
+Attributes:   5
+              age
+              income
+              student
+              credit
+              buys
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+student = yes: yes (2.0)
+student = no: no (3.0/1.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           0                0      %
+Incorrectly Classified Instances         2              100      %
+Kappa statistic                          0     
+Mean absolute error                      1     
+Root mean squared error                  1     
+Relative absolute error                125      %
+Root relative squared error            125      %
+Total Number of Instances                2     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        1.000    0.000      ?        ?          ?        ?         ?         yes
+                 0.000    ?        ?          0.000    ?          ?        ?         1.000     no
+Weighted Avg.    0.000    ?        ?          0.000    ?          ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 0 0 | a = yes
+ 2 0 | b = no
+

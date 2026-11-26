@@ -1,0 +1,75 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     computer
+Instances:    5
+Attributes:   5
+              age
+              income
+              student
+              credit
+              buys
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                Class
+Attribute         yes     no
+               (0.57) (0.43)
+=============================
+age
+  young            1.0    2.0
+  middle           3.0    1.0
+  old              2.0    2.0
+  [total]          6.0    5.0
+
+income
+  high             2.0    2.0
+  medium           1.0    2.0
+  low              3.0    1.0
+  [total]          6.0    5.0
+
+student
+  yes              3.0    1.0
+  no               2.0    3.0
+  [total]          5.0    4.0
+
+credit
+  fair             3.0    2.0
+  excellent        2.0    2.0
+  [total]          5.0    4.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           0                0      %
+Incorrectly Classified Instances         2              100      %
+Kappa statistic                          0     
+Mean absolute error                      0.6095
+Root mean squared error                  0.6114
+Relative absolute error                 76.1836 %
+Root relative squared error             76.4202 %
+Total Number of Instances                2     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        1.000    0.000      ?        ?          ?        ?         ?         yes
+                 0.000    ?        ?          0.000    ?          ?        ?         1.000     no
+Weighted Avg.    0.000    ?        ?          0.000    ?          ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 0 0 | a = yes
+ 2 0 | b = no
+
